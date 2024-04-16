@@ -52,4 +52,4 @@ The Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (
 # Acknowledgments
 
 Simple.css Framework by Kev Quirk and is licensed under the MIT license.
-Illustrations by RayT
+Illustrations by ray @ kellyxray
