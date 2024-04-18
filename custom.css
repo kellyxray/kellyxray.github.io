@@ -1,0 +1,134 @@
+:root {
+  --sans-font: "Inter";
+  --heading-font: "Poiret One";
+  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  --standard-border-radius: 5px;
+
+  --bg: white;
+  --accent-bg: #bfc4ac;
+  --button: #212121;
+  --text: #212121;
+  --text-light: #A9A9A9;
+  --border: #bfc4ac;
+  --accent: #ca922f;
+  --accent-hover: #ca922f;
+  --accent-text: white;
+  --code: #A9A9A9;
+  --preformatted: white;
+  --marked: #ca922f;
+  --disabled: #A9A9A9;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--heading-font);
+    }
+
+    body {
+        grid-template-columns: 1fr min(100%) 1fr;
+    }
+    
+    /* Top navigation styling */
+    header {
+        background-color: var(--bg);
+        border-bottom: none;
+    }
+    
+   .topnav {
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        color: var(--text);
+        text-align: center;
+        padding: 0.5em 0.5em;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        color: var(--accent-hover);
+    }
+
+    /* Add an active class to highlight the current page */
+    .topnav a.active {
+        color: var(--accent-hover);
+    }
+    
+    /* Add a button class to highlight the button link */
+    .topnav a.button {
+        background-color: var(--button);
+        color: var(--accent-text);
+        border-radius: 25px;
+    }
+    
+    /* Change the color of the button link on hover */
+    .topnav a.button:hover {
+        background-color: var(--accent);
+    }
+
+    /* Hide the link that should open and close the topnav on small screens */
+    .topnav .icon {
+        display: none;
+    } 
+
+    header .mobile {
+        display: none;
+    }
+    
+    /* When the screen is less than 850 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+    @media screen and (max-width: 850px) {
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+            font-family: var(--heading-font);
+            font-weight: 600;
+        }
+        header .logo {
+            display: none;
+        }
+        header .topnav {
+            font-size: 1.25rem;
+        }
+    }
+
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+    @media screen and (max-width: 850px) {
+        .topnav.responsive {
+            position: relative;
+        }
+        .topnav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    /* Misc formatting */
+    th {
+      color: var(--accent-text);
+    }
+
+    tr:nth-child(even) {
+      /* Set every other cell slightly darker. Improves readability. */
+      color: var(--accent-text);
+    }
+    
+    mark {
+        color: var(--accent-text);
+    }
+
+    mark a {
+        color: var(--text-light);
+    }
+}
