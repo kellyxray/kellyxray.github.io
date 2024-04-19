@@ -45,9 +45,8 @@
     
    .topnav {
         overflow: hidden;
-       
-       justify-self: end;
-    }
+        justify-self: end;
+   }
 
     /* Style the links inside the navigation bar */
     .topnav a {
@@ -77,6 +76,7 @@
         border-radius: 25px;
         width: 4em;
         margin: 0;
+        box-sizing : content-box;
     }
     
     /* Change the color of the button link on hover */
