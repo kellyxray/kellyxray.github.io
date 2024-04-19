@@ -75,11 +75,7 @@
     .topnav .icon {
         display: none;
     } 
-
-    header .mobile {
-        display: none;
-    }
-    
+   
     /* When the screen is less than 850 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
     @media screen and (max-width: 850px) {
         .topnav a:not(:first-child) {
