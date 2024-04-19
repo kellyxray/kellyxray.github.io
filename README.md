@@ -40,4 +40,6 @@ ND: No derivatives or adaptations of your work are permitted.
 
 Simple.css Framework by Kev Quirk and is licensed under the MIT license.
 
+Responsive Top Navigation by W3Schools.
+
 Illustrations by ray @ kellyxray
