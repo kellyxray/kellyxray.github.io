@@ -23,7 +23,6 @@
     }
 
     body {
-        grid-template-columns: 0.5rem min(100%) 0.5rem;
         padding: 0;
         margin: 0;
     }
@@ -32,12 +31,22 @@
     header {
         background-color: var(--bg);
         border-bottom: none;
-        padding: 0;
+        padding: 0 0.5rem 0 0.5rem;
         margin: 0;
+        
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+    }
+    
+    .logo {
+        justify-self: start;
     }
     
    .topnav {
         overflow: hidden;
+       
+       justify-self: end;
     }
 
     /* Style the links inside the navigation bar */
@@ -67,6 +76,7 @@
         color: var(--accent-text);
         border-radius: 25px;
         width: 4em;
+        margin: 0;
     }
     
     /* Change the color of the button link on hover */
@@ -80,7 +90,11 @@
     } 
 
     /* When the screen is less than 850 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 720px) {
+        header {
+            display: block;
+            padding: 0;
+        }
         .topnav a:not(:first-child) {
             display: none;
         }
@@ -99,7 +113,7 @@
     }
 
     /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 720px) {
         .topnav.responsive {
             position: relative;
         }
