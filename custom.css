@@ -62,6 +62,8 @@
         background-color: var(--button);
         color: var(--accent-text);
         border-radius: 25px;
+        width: 4em;
+        text-align: center
     }
     
     /* Change the color of the button link on hover */
@@ -110,14 +112,14 @@
         .topnav.responsive a {
             float: none;
             display: block;
-            text-align: center;
+            text-align: left;
         }
     }
 
     /* Misc formatting */
     th {
       color: var(--accent-text);
-    }
+    }   
 
     tr:nth-child(even) {
       /* Set every other cell slightly darker. Improves readability. */
