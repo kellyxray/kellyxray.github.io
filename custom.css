@@ -46,6 +46,12 @@
    .topnav {
         overflow: hidden;
         justify-self: end;
+        .fa-bars {
+            display: none;
+        }
+       .fa-times {
+            display: none;
+        }
    }
 
     /* Style the links inside the navigation bar */
@@ -95,6 +101,12 @@
             display: block;
             padding: 0;
         }
+        .topnav {
+            .fa-bars {
+                display: inline-block;
+                width: 1em;
+            }
+        }
         .topnav a:not(:first-child) {
             display: none;
         }
@@ -116,6 +128,13 @@
     @media screen and (max-width: 720px) {
         .topnav.responsive {
             position: relative;
+            .fa-bars {
+                display: none;
+            }
+            .fa-times {
+                display: inline-block;
+                width: 1em;
+            }
         }
         .topnav.responsive a.icon {
             position: absolute;
