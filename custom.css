@@ -169,4 +169,44 @@
     mark a {
         color: var(--text-light);
     }
+
+    /* Carousel section */ 
+    .carousel {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .carousel-cell {
+        border-radius: var(--standard-border-radius);
+        width: 66%;
+        aspect-ratio: 1 / 1;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .carousel-cell:before {
+        display: block;
+        content: '';
+    }
+    
+    .carousel.is-fullscreen .carousel-cell {
+        height: 100%;
+    }
+    
+    .flickity-button:hover {
+        background: white;
+    }
+
+    .static-banner {
+        z-index: 1;
+        color: white;
+        display: grid;
+        text-align: center;
+        align-items: end;
+    }
 }
