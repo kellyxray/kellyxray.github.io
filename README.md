@@ -40,6 +40,8 @@ ND: No derivatives or adaptations of your work are permitted.
 
 Simple.css Framework by Kev Quirk and is licensed under the MIT license.
 
-Responsive Top Navigation by W3Schools.
+Responsive Top Navigation, and Scroll Back To Top Button by W3Schools.
+
+Flickity by Metafizzy.
 
 Illustrations by ray @ kellyxray
