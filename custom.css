@@ -257,6 +257,19 @@
         align-items: center;
     }
     
+    .container-1fr {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 1rem;
+        grid-row-gap: 1rem;
+        align-items: center;
+        color: var(--text-light);
+    }
+    
+    .span-column {
+        grid-column: 1 / span 2;
+    }
+
     .flex-item {
         display: grid;
     }
@@ -311,4 +324,3 @@
         background-color: var(--accent); /* Add a dark-grey background on hover */
     }
 }
-
