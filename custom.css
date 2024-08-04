@@ -323,4 +323,25 @@
     #top:hover {
         background-color: var(--accent); /* Add a dark-grey background on hover */
     }
+    /* Classes for notices */
+    .notice {
+        background: none;
+        border: none;
+        padding: none;
+        margin: none;
+        color: var(--border);
+    }
+    #rsvpbutton {
+        background-color: var(--accent);
+        color: white;
+        padding: 0.5em 0.5em;
+        border: none;
+        border-radius: 25px;
+        width: 4em;
+        font-weight: 600;
+        font-size: 1.15rem;
+    }
+    #rsvpbutton:hover {
+        background-color: var(--border);
+    }
 }
